@@ -97,30 +97,30 @@ let ananda = new Mahasiswa('Ananda', 10);
 // versi Class
 // Mirip dengan konsep Class yang memiliki inhertance atau pewarisan 
 // tapi sebenarnya yang dijalanin dibelakang layar yang dijalankan object prototype diatas
-// class Mahasiswa {
-//     constructor(nama, energi) {
-//         this.nama = nama;
-//         this.energi = energi;
-//     }
+class Mahasiswa {
+    constructor(nama, energi) {
+        this.nama = nama;
+        this.energi = energi;
+    }
 
-//     makan(porsi) {
-//         this.energi += porsi;
-//         return `Halo ${this.nama}, selamat makan!`
-//     }
+    makan(porsi) {
+        this.energi += porsi;
+        return `Halo ${this.nama}, selamat makan!`
+    }
     
-//     main(jam) {
-//         this.energi -= jam;
-//         return `Halo ${this.nama}, selamat bermain!`
-//     }
+    main(jam) {
+        this.energi -= jam;
+        return `Halo ${this.nama}, selamat bermain!`
+    }
     
-//     tidur(jam) {
-//         this.energi += jam * 2;
-//         return 'Halo ${this.nama}, selamat tidur!';
-//     }
-// }
+    tidur(jam) {
+        this.energi += jam * 2;
+        return 'Halo ${this.nama}, selamat tidur!';
+    }
+}
 
-// let ananda = new Mahasiswa('Ananda', 10);
-// let doddy = new Mahasiswa('Doddy', 20);
+let ananda = new Mahasiswa('Ananda', 10);
+let doddy = new Mahasiswa('Doddy', 20);
 
 // dengan memahami protytpe kita juga bisa pahan kalau misalnya kita menggunakan tipe data apapun
 // dijavascript tipe data apapun sebenarnya adalah object
