@@ -1,5 +1,9 @@
 // semakin banyak kita punya callback maka disebut dengan callback hell yaitu kodenya menjorong kedalam
-// untuk menghindari callback hell solusinya menggunakan promise
+// ada cara yang lebh efektif lagi dengan cara menggantikan fungsi JQuery menggunakan fungsi bawaan JS yaitu Fetch
+// Menggunakan Jquery tidak salah, tapi ketika menggunakan JQuery kita memanggil Library Eksternal jadi defaultnya
+
+// perfomancenya Lebih lambat dari bawaaan JS, kalau kita bisa menggunakan JS kenapa perlu repot-repot menggunakan
+// library eksternal,
 
 $('.search-button').on('click', function() {
     $.ajax({
