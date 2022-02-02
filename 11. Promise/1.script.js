@@ -19,6 +19,7 @@
 // xhr.open('get', 'http://www.omdbapi.com/?apikey=f6eb8859&s=avengers');
 // xhr.send();
 
+
 // Fetch
                                                             //   (  Callback    )
 // fetch('http://www.omdbapi.com/?apikey=f6eb8859&s=avengers').then(response => response.json()).then(response => console.log(response));
