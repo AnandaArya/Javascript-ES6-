@@ -22,8 +22,7 @@
 
 // Fetch
                                                             //   (  Callback    )
-// fetch('http://www.omdbapi.com/?apikey=f6eb8859&s=avengers').then(response => response.json()).then(response => console.log(response));
-
+fetch('http://www.omdbapi.com/?apikey=f6eb8859&s=avengers').then(console.log(response => response.json()));
 // Fetch mengembalikan Promise
 // Promise artinya adalah janji
 // Adalah sebuah Object yang mereprensentasikan keberhasilan atau kegagalan sebuah event
@@ -79,26 +78,26 @@
 // ketika punya banyak promise mau dijalankan sekaligus
 // contoh kita akan konek kedua API yang berbeda, API pertama untuk ngambil data film
 
-const film = new Promise(resolve => {
-    setTimeout(() => {
-        // misal kita dapetin datanya berupa json / array of object
-        resolve([{
-            judul: 'Avengers',
-            sutradara: 'Ananda Arya',
-            pemeran: 'Doddy, Erik'
-        }]);
-    }, 1000);
-});
+// const film = new Promise(resolve => {
+//     setTimeout(() => {
+//         // misal kita dapetin datanya berupa json / array of object
+//         resolve([{
+//             judul: 'Avengers',
+//             sutradara: 'Ananda Arya',
+//             pemeran: 'Doddy, Erik'
+//         }]);
+//     }, 1000);
+// });
 
-const cuaca = new Promise(resolve => {
-    setTimeout(() => {
-        resolve([{
-            kota: 'Bandung',
-            temp: 26,
-            kondisi: 'Cerah Berawan'
-        }])
-    }, 500);
-});
+// const cuaca = new Promise(resolve => {
+//     setTimeout(() => {
+//         resolve([{
+//             kota: 'Bandung',wan'
+//         }])
+//     }, 500);
+//             temp: 26,
+//             kondisi: 'Cerah Bera
+// });
 
 // film.then(response => console.log(response));
 // cuaca.then(response => console.log(response));
